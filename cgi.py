@@ -1,22 +1,26 @@
-import cgi ,cgitb
+import cgi, cgitb
 
 # to create instance of FieldStorage 
 # class which we can use to work 
 # with the submitted form data
 form = cgi.FieldStorage()
-your_name = form.getvalue('your_name')
+haight = form.getvalue('your_name')
 
 # to get the data from fields
-company_name = form.getvalue('company_name')
+weight = form.getvalue('company_name')
+
+bmi = haight / (weight * weight)
 
 print("Content-type:text/html\n")
 print("<html>")
 print("<head>")
-print("<title>First CGI Program</title>")
+print("<title>Body Mass Index</title>")
 print("</head>")
 print("<body>")
-print("<h2>Hello, %s is working in %s</h2>"
-      % (your_name, company_name))
+print("<h2>Hello, your haight is %s , and your weight %s</h2>"
+      % (haight, weight))
+print("<h2> Your BMI: %s </h2>"
+      % bmi)
 
 print("</body>")
 print("</html>")
