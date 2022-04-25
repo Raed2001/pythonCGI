@@ -1,4 +1,4 @@
-import cgi, cgitb
+import cgi ,cgitb
 
 # to create instance of FieldStorage 
 # class which we can use to work 
