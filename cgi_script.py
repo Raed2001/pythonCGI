@@ -1,4 +1,4 @@
-import cgi, cgitb
+import cgi
 
 
 # class which we can use to work
