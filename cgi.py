@@ -1,13 +1,14 @@
 import cgi, cgitb
 
-# to create instance of FieldStorage 
-# class which we can use to work 
+
+# class which we can use to work
 # with the submitted form data
 form = cgi.FieldStorage()
-haight = form.getvalue('your_name')
+
+haight = form.getvalue('haight')
 
 # to get the data from fields
-weight = form.getvalue('company_name')
+weight = form.getvalue('weight')
 
 bmi = haight / (weight * weight)
 
