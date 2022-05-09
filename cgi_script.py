@@ -4,11 +4,11 @@ import cgi
 # class which we can use to work
 # with the submitted form data
 form = cgi.FieldStorage()
-#TODO: cast variables haight and weight into integer so that they can get calculated
-haight = form.getvalue('haight')
+
+haight = int(form.getvalue('haight'))
 
 # to get the data from fields
-weight = form.getvalue('weight')
+weight = int(form.getvalue('weight'))
 
 bmi = haight / (weight * weight)
 
