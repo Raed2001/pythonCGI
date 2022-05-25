@@ -21,8 +21,8 @@ print("<head>")
 print("<title>Body Mass Index</title>")
 print("</head>")
 print("<body>")
-print("<h2>Hello, your haight is %s , and your weight %s</h2>"
-      % (haight, weight))
+print("<h2>Hello, %s your haight is %s , and your weight %s</h2>"
+      % (name,haight, weight))
 print("<h2> Your BMI: %s </h2>"
       % bmi)
 
