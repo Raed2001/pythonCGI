@@ -1,18 +1,21 @@
+#!/usr/bin/python3
 import cgi
 
 
 # class which we can use to work
 # with the submitted form data
 form = cgi.FieldStorage()
+name = form.getvalue('name')
 
-haight = int(form.getvalue('haight'))
+haight =form.getvalue('haight')
 
 # to get the data from fields
-weight = int(form.getvalue('weight'))
+weight = form.getvalue('weight')
 
 bmi = haight / (weight * weight)
 
-print("Content-type:text/html\n")
+print("Content-type:text/html")
+print()
 print("<html>")
 print("<head>")
 print("<title>Body Mass Index</title>")
